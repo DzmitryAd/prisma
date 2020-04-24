@@ -231,7 +231,6 @@ async function getSchemaPath(): Promise<string> {
   }
 
   if (await exists(path.join(cwd, 'prisma', prismaSchemaFile))) {
-    // Fou
     return path.normalize(path.join(cwd, 'prisma'))
   }
 
